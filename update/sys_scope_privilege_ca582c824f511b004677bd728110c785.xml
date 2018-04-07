@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_scope_privilege">
     <sys_scope_privilege action="INSERT_OR_UPDATE">
-        <operation>execute</operation>
+        <operation>write</operation>
         <source_scope display_value="Mid Server Automation">37d12b3d4f9dd7004677bd728110c7e8</source_scope>
         <status>allowed</status>
         <sys_class_name>sys_scope_privilege</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-07 05:56:02</sys_created_on>
-        <sys_id>c2533731db111300a74f76efbf96198a</sys_id>
+        <sys_created_by>MidServer</sys_created_by>
+        <sys_created_on>2018-04-07 09:47:36</sys_created_on>
+        <sys_id>ca582c824f511b004677bd728110c785</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Glide API: event management</sys_name>
+        <sys_name>ecc_agent</sys_name>
         <sys_package display_value="Mid Server Automation" source="x_snc_mid_server_a">37d12b3d4f9dd7004677bd728110c7e8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mid Server Automation">37d12b3d4f9dd7004677bd728110c7e8</sys_scope>
-        <sys_update_name>sys_scope_privilege_c2533731db111300a74f76efbf96198a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-07 05:56:02</sys_updated_on>
-        <target_name>Glide API: event management</target_name>
+        <sys_update_name>sys_scope_privilege_ca582c824f511b004677bd728110c785</sys_update_name>
+        <sys_updated_by>MidServer</sys_updated_by>
+        <sys_updated_on>2018-04-07 09:47:36</sys_updated_on>
+        <target_name>ecc_agent</target_name>
         <target_scope display_value="Global">global</target_scope>
-        <target_type>scriptable</target_type>
+        <target_type>sys_db_object</target_type>
     </sys_scope_privilege>
 </record_update>

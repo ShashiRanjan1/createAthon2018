@@ -7,13 +7,11 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-07 05:55:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
         <sys_id>c853bb75db111300a74f76efbf9619d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ScopedGlideRecord</sys_name>
         <sys_package display_value="Mid Server Automation" source="x_snc_mid_server_a">37d12b3d4f9dd7004677bd728110c7e8</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Mid Server Automation">37d12b3d4f9dd7004677bd728110c7e8</sys_scope>
         <sys_update_name>sys_scope_privilege_c853bb75db111300a74f76efbf9619d1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

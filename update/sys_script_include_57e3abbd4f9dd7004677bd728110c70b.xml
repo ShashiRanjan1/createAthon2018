@@ -10,21 +10,46 @@
         <script><![CDATA[var midPowerShell = Class.create();
 midPowerShell.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
-    type: 'midPowerShell'
+	insertData : function()
+	{
+		gs.logWarning("midPowerShell",'shashi');
+		var midName='';
+		var midSysID =this.getParameter('sysparm_sandpit_id');
+		//gs.log("sys id"+midSysID,'Gyaneshwar');
+
+		var grMidserverName = new GlideRecord("ecc_agent");
+		grMidserverName.addQuery('sys_id',midSysID);  
+		grMidserverName.query();
+		if (grMidserverName.next())
+		{
+
+			midName=grMidserverName.name;
+		}
+		//gs.log("sys id"+midName,'Gyaneshwar');		
+		var gr = new GlideRecord('ecc_queue');
+		gr.initialize();
+		gr.agent = 'mid.server.'+midName;
+		gr.topic = 'Command';
+		//gr.name = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe C:\\tools\\installMidserver.ps1 '"+midName+"'";
+
+		gr.name = "g:\\mid.bat \"\" \"\" \"\" \"\" \"\" \"\" \""+midName+'"';
+		gr.queue = 'output';
+		gr.insert();  
+	},
+
+	type: 'midPowerShell'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-07 05:01:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
         <sys_id>57e3abbd4f9dd7004677bd728110c70b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>midPowerShell</sys_name>
         <sys_package display_value="Mid Server Automation" source="x_snc_mid_server_a">37d12b3d4f9dd7004677bd728110c7e8</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Mid Server Automation">37d12b3d4f9dd7004677bd728110c7e8</sys_scope>
         <sys_update_name>sys_script_include_57e3abbd4f9dd7004677bd728110c70b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-07 06:11:27</sys_updated_on>
+        <sys_updated_on>2018-04-07 10:34:07</sys_updated_on>
     </sys_script_include>
 </record_update>
