@@ -14,9 +14,9 @@
         <reply_email/>
         <required_roles/>
         <script><![CDATA[gs.debug("in debug action");
-/*var agent_name = "AutoMidServer";//current.name.replace(/'/g, "\\'");
+var agent_name = "AutoMidServer";//current.name.replace(/'/g, "\\'");
 var midmanage = new MIDServerManage();
-midmanage.restartService(agent_name);*/
+midmanage.restartService(agent_name);
 current.status = "Up";
 current.update();]]></script>
         <stop_processing>false</stop_processing>
@@ -26,7 +26,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5641888adb111300a74f76efbf96193e</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>midServerUp</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mid Server Automation" source="x_snc_mid_server_a">37d12b3d4f9dd7004677bd728110c7e8</sys_package>
@@ -34,7 +34,7 @@ current.update();]]></script>
         <sys_scope display_value="Mid Server Automation">37d12b3d4f9dd7004677bd728110c7e8</sys_scope>
         <sys_update_name>sysevent_in_email_action_5641888adb111300a74f76efbf96193e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-07 10:09:42</sys_updated_on>
+        <sys_updated_on>2018-04-10 11:09:43</sys_updated_on>
         <table>ecc_agent</table>
         <template/>
         <type>reply</type>
